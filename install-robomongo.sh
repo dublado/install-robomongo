@@ -25,7 +25,7 @@ TEMP_DIR=$HOME/tmp
 sudo apt-get update
 sudo apt-get install -y git qt5-default qt5-qmake scons cmake
 
-# Get the source code from Git. Perform a shallow clone to save bandwidth.
+# Get the source code from Git. Perform a shallow clone to reduce download time.
 mkdir -p $TEMP_DIR
 cd $TEMP_DIR
 git clone --depth 1 https://github.com/paralect/robomongo.git
